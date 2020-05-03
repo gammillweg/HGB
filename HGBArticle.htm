@@ -1,0 +1,274 @@
+﻿<!DOCTYPE HTML>
+<!--------------------------------------------------------------------------->  
+<!--                           INTRODUCTION                                
+
+ The CodeProject article submission template (HTML version)
+
+Using this template will help us post your article sooner. To use, just 
+follow the 3 easy steps below:
+ 
+     1. Fill in the article description details
+     2. Add links to your images and downloads
+     3. Include the main article text
+
+That's all there is to it! All formatting will be done by our submission
+scripts and style sheets. 
+
+-->  
+<!--------------------------------------------------------------------------->  
+<!--                        IGNORE THIS SECTION                            -->
+<html>
+<head>
+<title>CodeProject</title>
+<Style>
+BODY, P, TD { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt }
+BODY {padding:15px; }
+H2,H3,H4,H5 { color: #ff9900; font-weight: bold; }
+H2 { font-size: 13pt; }
+H3 { font-size: 12pt; }
+H4 { font-size: 10pt; color: black; }
+PRE { BACKGROUND-COLOR: #FBEDBB; FONT-FAMILY: "Courier New", Courier, mono; WHITE-SPACE: pre; }
+CODE { COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono; }
+</style>
+<link type="text/css" rel="stylesheet" 
+      href="https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Css/Main.min.css">
+</head>
+<body bgcolor="#FFFFFF" color=#000000>
+<!--------------------------------------------------------------------------->  
+
+
+<!-------------------------------     STEP 1      --------------------------->
+<!--  Fill in the details (CodeProject will reformat this section for you) -->
+
+<pre>
+Title:       Hexagon Game Board
+Description: Java classes to create a large hexagon game board and find cells quickly.
+Abstract:    HGB will create a large number of hexagons (several thousand)
+             in a a semi-hexagonal shape.  Each cell is bound to adjacent cells.
+             Each cell may be rapidly located.  The hive translates smoothly.  Cell
+             size is easily changed to facilitate zoom in/out. 
+
+Author:      Gammill
+Email:       gammillweg@msn.com
+
+Language:    Java
+Platform:    Linux, Android
+Technology:  Java, Android
+Topic:       Games, Utilities, Android
+
+Section      Java, Android
+SubSection   Graphics, Libraries
+
+License:     Code Project<a href="http://www.codeproject.com/info/licenses.aspx"></a>
+</pre>
+
+<!-------------------------------     STEP 2      --------------------------->
+<!--  Include download and sample image information.                       --> 
+
+<ul class=download>
+<li><a href="apk.zip">Download Android demo project - 1.9 Mb </a></li>
+<li><a href="HGBExample.zip">Download Android source - 199 Kb</a></li>
+<li><a href="HGBClasses.zip">Download HGB Java Classes source - 50 Kb</a></li>
+</ul>
+
+<p><img src="defaultStartup.png" alt="Sample Image - maximum width is 600 pixels" style="width:400px; height:200px"></p>
+<p><img src="49Rings.png" alt="Sample Image - maximum width is 600 pixels"  style="width:400px; height:200px"></p>
+<p><img src="2Rings.png" alt="Sample Image - maximum width is 600 pixels"   style="width:400px; height:200px"></p>
+<p><img src="VertexOrder.png" alt="Sample Image - maximum width is 600 pixels"   style="width:400px; height:200px"></p>
+
+
+<!-------------------------------     STEP 3      --------------------------->
+
+<!--  Add the article text. Please use simple formatting (<h2>, <p> etc)   -->
+
+<h2>Introduction</h2>
+
+<p>In Mid 2014 I had an idea to write a game based on a hexagon play
+field.  Over time I created HexagonGameBoard (HGB); a set of 15 Java
+classes. Graphics are implemented using Android Studio.  My game was
+never finished; but HGB is worth sharing.</p>
+
+<p>Android Studio's "File->"Export to zip" produced
+HGBExample.zip. HGBClasses.zip is just the HGB classes. I have no way
+to test the provided APK.  I used AS 3.6.1, API 16 Android 4.1 Jelly
+Bean for this implementation.</p>
+
+<!-- Editor:  Perhaps you can, or will be willing to test the APK.  I do not
+own a Android device.  My development is done on a emulator. -->
+
+<h2>What HGB does</h2>
+
+<p>HGB will draw several thousand cells responsively in a
+semi-hexagonal layout. Of course, for a large number of cells, response
+degrades... depending on machine speed and memory.  Any cell is found
+quickly via a touch or mouse click.  Each cell is linked (bound) to
+adjacent cells and there are a number of utilities (HGBUtils) to help
+one move about.  The number of cells may be changed on command by rose
+rings.  The size of each cell may be changed on command.  Cell size
+allows for zoom in and out.  The entire hive translate smoothly.</p>
+
+<p>The entire game board is one large path, which is why it translates so
+smoothly.  I have never liked images.  If you prefer them, you can
+limit cell size to your image size and use provided inscribed or
+superscribed rectangles. I have used paths to draw flat figures that
+change size with the cells and may be translated easily with the hive.
+Of course, you don't have to draw the hive, just use the data to
+position your objects.</p>
+
+<p>HGBExample allows one to increase/decrease the size of the hive,
+Zoom in/out (change the size of cells) and choose cells.  To better
+understand what HGB is able to do, run the example and look at the
+graphic.</p>
+
+
+<h2>Protective Caveat's</h2>
+
+<p>You need to see the graphics and see how HGB works to understand
+what I am sharing.  My few words here are insufficient.  HGB is the
+point of the post, not the Android implementation. I make no claim on
+Android progamming prowess.</p>
+
+<p>This code was developed "for the fun of it" by a single individual
+in a none rigorous home environment.  HGB is not case hardened,
+production ready code.  I have gone through the code comments and
+corrected several errors. But, I'm sure I did not get them all
+corrected.  The code may contains a few bugs.  There are numerous methods written
+for a moment of need, which are now clutter.  I have not been in
+the code for a long time.  You have been warned, so don't give me a
+hard time about it.    ---   It works!</p>
+
+<h3>On the positive side</h3>
+
+<p>HGB works! You can pop it into your code without understanding the
+complexities of how the hexagons were tiled, are bound to one another, or
+how cells are located.  You can easily find your way from cell to
+cell.  And, all thought I have warned of bugs, I have not experienced
+problems when using it.  I believe it is trust worthy code</p>
+</p>
+
+<h2>Basics</h2>
+
+<p>There is only one hexagon -- the base hexagon drawn at the device
+origin (0,0) (HGBHexBase).  this one hexagon is translated, as needed,
+to generate a graphic path (model.GameBoardSetup).  One ends up with a
+large graphics path.  In the past, Android did not handle large paths
+well.  One had to declare android:hardwareAccelerated="false" in ones
+manifest.  (I believe Android has fixed the problem.)</p>
+
+<p>All cells have an origin and index (HGBCellPack).  Only the the center
+cell (index 0) has a device origin.  All other cells are found by an
+offset from the center cell.</p>
+
+<p>The cells are tiled in a pattern I term "roses" with a center cell and
+6 "petals".  These roses fit together to build the semi-hexagonal
+shape of the game board.  Each rose center index is assigned in unit
+multiples of 10, with petals units 1-6.  HGB manages the allocation of
+an array of HGBCellPack, indexed via cell ID (or cellIndex).  Array
+members, units 7, 8, and 9 are left null and wasted.</p>
+
+<h2>Some code fragments</h2>
+
+<pre>
+  //find a cell by touch:
+  (onSingleTapUp(MotionEvent event))
+  int cellIndex = hgbUtils.getCellIndex(event.getX(), event.getY());
+
+  //find properties of a cell:
+  HGBCellPack hgbCellPack = hgbShared.getCellPack(cellIndex);
+
+  //find adjacent cells:
+  int[] boundingAry = hgbUtils.getBondings(cellIndex);
+
+  // Parse through the hive:
+  for (int inx = 0; inx < hgbShared.getCellAryLen(); inx++) {
+    HGBCellPack hgbCellPack = hgbShared.getCellPack(inx);
+    if (hgbCellPack != null) {
+       ... do whatever
+       float[] origin = hgbCellPack.getOrigin();
+       ... etc }
+  }                   
+
+...</pre>
+
+<h2>Support Notes</h2>
+
+<p>The two classes HGBShared and HGBUtils provide public access to
+protected code.  I was somewhat sloppy when writing all of this.
+Thus, you will find, public access that should not have been allowed.</p>
+
+<p>Two dimensional vectors are used extensively.  You must know that a
+vector is NOT a coordinate.  Vectors give an X and Y displacement. The
+class HGBVector2D was pulled form MSDN documentation and I converted
+it to various languages as my preferences changed.  I have found it an
+extremely useful class that you would do well to look at.</p>
+
+<h3>Comment on "Shared"</h3>
+
+<p>My first language (50+ years ago) was FORTRAN 4 which had
+something called "Common".  To avoid opening classes to public, I have
+adopted a programming convention where I use a sudo Singleton I call
+"Shared".  It is defined only once and passed down.  Shared holds lots
+of common data, gets and sets, finals and small methods.</p>
+
+<p>A number of defaults are defined in model.GameShared.  There you will
+find the default number of rose rings the default cell size and hive
+origin.  Similarly, there is a HGBShared.</p>
+
+<h2>Some Definitions</h2>
+
+<!-- Editor: if you could the format  at least somewhat as below
+     that would be nice.  I saw on the defalut htm display all jammed
+     together.  It loses meaing. -->
+<pre>
+Hive:   The game board (all the hexagons)
+Rose:   A group of 7 hexagons with a center and 6 arranged around
+Petal:  Any one of 6 hexagons grouped around the center of a rose
+Cell:   Any hexagon
+Vertex: Any of the 6 points where sides connect
+Vertex  Radius: The magnitude from cell origin to any vertex
+Normal  Radius: The magnitude from cell origin to the center of any side
+Cell Origin: The center of the hexagon
+Hive Origin: The origin of the center cell of the center rose
+             (cellIndex == 0)
+
+Rose Ring: A number of roses organized around a center rose.  One can
+           not depend on the cell index to know the number of cells.
+           This is due to the waste of 3 indices per rose.  (I have made
+           this mistake.)
+
+roseRing 1 (0) 1 rose (pedals 1-6)
+roseRing 2 (10-60) 6 roses. (rose 30 contains petals 31-36)
+roseRing 3 (70-180) 12 roses. The largest cell index will be 186;
+                              but there are only 133 cells. The
+                              first rose in the 4th ring will be 190.
+
+           The Math: 1 + 6 + 12 = 19 roses * 7 cells = 133 cells
+           3 wasted * 19 roses = 57 wasted indices
+           133 cells + 57 wasted = 190 which is the index of the
+           first rose in the next ring.
+</pre>
+
+<h2>Conclusion</h2>
+
+<p>How the hexagons were tiled and then adjacent cells found and bound
+together really needs a more detailed explanation. If this article and
+code is well received.  A further, in depth, explanation may be
+written.</p>
+
+<p>I make a habit of doing a fairly good job of commenting my code.  For
+this release, I went though and read lots of comments and reviewed much
+of the code.  I hope I found and corrected sufficient errors such that
+you will be able to find your way and come to understand how to use it.</p>
+
+<p>My hope is, that one of you will simply love the code, pick it up,
+make it a true library, publish and maintain it on GitHub.  I am
+approching 80, and not up to the task.  If, as is more likely, your
+not that person, hopefully you will find HGB useful and it will find a
+home in your code. Please credit HGB, if used in a published app.</p>
+
+
+<!-------------------------------    That's it!   --------------------------->
+</body>
+
+</html>
+
