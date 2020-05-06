@@ -25,7 +25,12 @@ The code for a Android Studio app which is displayed in the images
 above.  As stated in the article: I lay no claim to being a good
 Android programmer; but the app works!  (Read the Article)
 
-5) java class code for HGB
+5) HGBBasics.zip
+
+Simple Android Studio app with the basic code necessary to initialize and
+generate a hexagon game board.  It does not draw the graphics. 
+
+6) java class code for HGB
 
 All the classes of HGB
 
