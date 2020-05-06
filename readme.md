@@ -6,7 +6,7 @@ prior to my fixes.
 1) HGBArticle.htm
 
 I tired to publish the article: HGBArticle.htm on Code Project; but it
-was rejected as not ready for CP publication. (I think they were
+was rejected as not ready for CP publication. (They were
 correct to reject it.)  So, accept the fact it is not ready for you
 yet; but you can deal with it.  HGBArticle.htm will give you a little
 idea of what HGB is and will do.
