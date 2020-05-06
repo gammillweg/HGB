@@ -36,4 +36,5 @@ on how to use it.  BUT, as stated in the htm article, I am approaching 80
 and I am not sure I am up to the task.  We shall see.
 
 OF COURSE... if a hexagon game board generator interests you, and you
-would like to join my effort.  Please email me at gammillweg@centurylink.net.
+would like to join my effort.  Please email me at my user name (gammillweg)
+at centurylink.net.
