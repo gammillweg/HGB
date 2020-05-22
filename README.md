@@ -1,8 +1,9 @@
 Hexagon Game Board (HGB) is a set of classes to create a manageable set of hexagon.
 
-For examples see: https://github.com/gammillweg/HGBExample[1,2]
+For examples see: https://github.com/gammillweg/HGBExample1 or 
+https://github.com/gammillweg/HGBExample2
 
-https://github.com/gammillweg/HGBExample1 is not useful.  All it does, with a few
+https://github.com/gammillweg/HGBExample1 is not very useful.  All it does, with a few
 lines in an Android Studio MainActivity, is show how easy it is to create a hive.
 
 https://github.com/gammillweg/HGBExample2 is considerably more complex
