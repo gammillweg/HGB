@@ -30,4 +30,4 @@ choose to cheat and open HGB code to your application, that is your choice.
 As I am new on GitHub, I just recently learned of "git clone <URL>"  (You may not know it.)
 On a Linux command line, simply type  "git clone https://github.com/gammillweg/HGBExample2"
 
-If you would like to join an effort to improve HGB, write to gammillgit@outlook.com.
+If you would like to join an effort to improve HGB, write to gitgammill@outlook.com.
